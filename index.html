@@ -147,21 +147,38 @@
 <body>
     <div id="help-icon">?</div>
     <div id="help-dialog">
-        <h2>How to Use</h2>
+
+        <h2>About</h2>
         <ul>
+            <li>Think of this as a gym session for your focus muscle.</li>
+            <li>It's a todo list with timer and background <a href="https://www.youtube.com/watch?v=P6Kgzb24Arw">brown</a> noise.</li>
+            <li>Each succseful focus session is a rep done for your focus muscle</li>
+            <li>Timer will remind you to bring the focus back to the task after each 1,2,3,5,8 minutes if successfully focused, or restart with 1 min if distracted.</li>
+        </ul>
+        <h2>Prep</h2>
+        <ul>
+            <li>Add todos to be done in the next time block (recommended 2h timeblock)</li>
+            <li>First task could be to make the prioritised todolist.</li>
+            <li>Put phone on silent and out of reach</li>
+            <li>Get enough water within reach.</li>
+        </ul>
+        <h2>How to Use</h2>
+        <ul>    
             <li>Rule 1: Start Brown Noise for background sound</li>
-            <li>Rule 2: Use the Fibonacci Timer for focused work sessions</li>
-            <li>Rule 3: Add and manage your todos in the list</li>
-            <li>Rule 4: The main todo displays your current focus task</li>
-            <li>Rule 5: Review the notes</li>
+            <li>Rule 2: Start timer</li>
+            <li>Rule 3: Start working on first task</li>
+            <li>Rule 4: When Timer rings (after 1,2,3,5,8,13... mins) - Check if you were able to focus or did you get distracted?</li>
+            <li>Rule 5: If you're still focused, well done! - Click Keep Griding - to start the next longer timer</li>
+            <li>Rule 6: If you got distracted, don't worry, do 5 pushups, and click Got Distracted to go back to 1min timer</li>
+            <li>Rule 7: Repeat until the end of your time block.</li>
         </ul>
         <span id="close-help">❌</span>
     </div>
     <div id="timer">00:00</div>
     <div id="timer-buttons">
         <button id="start-timer">Start Timer</button>
-        <button id="grind-button" class="hidden">Grind</button>
-        <button id="restart-button" class="hidden">Restart</button>
+        <button id="grind-button" class="hidden">🔨 Keep Griding</button>
+        <button id="restart-button" class="hidden">🐿 Got Distracted</button>
         <button id="brown-noise-button">Play Brown Noise</button>
     </div>
     <div id="main-todo"></div>

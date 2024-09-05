@@ -1,5 +1,5 @@
 // Fibonacci Timer logic
-let fibSequence = [1, 2, 3, 5, 8, 13, 21];
+let fibSequence = [1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610, 987];
 let currentFibIndex = 0;
 let timerInterval;
 let isTimerRunning = false;
@@ -84,7 +84,7 @@ document.getElementById('grind-button').addEventListener('click', startNextTimer
 document.getElementById('restart-button').addEventListener('click', function() {
     stopBeeping();
     hideButtons();
-    currentFibIndex = 0;
+    currentFibIndex = -1;
     startNextTimer();
 });
 
