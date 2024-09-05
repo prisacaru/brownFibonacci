@@ -120,13 +120,13 @@ function startBrownNoise() {
     brownNoiseNode.buffer = buffer;
     brownNoiseNode.loop = true;
     
-    // Apply a low-pass filter for a lower pitch
+    // Apply a low-pass filter for an even lower pitch
     const lowPassFilter = audioContext.createBiquadFilter();
     lowPassFilter.type = 'lowpass';
-    lowPassFilter.frequency.setValueAtTime(400, audioContext.currentTime);
-    
-    // Set a lower volume
-    gainNode.gain.setValueAtTime(0.2, audioContext.currentTime);
+    lowPassFilter.frequency.setValueAtTime(200, audioContext.currentTime); // Reduced from 400 to 200 Hz
+
+    // Set an even lower volume
+    gainNode.gain.setValueAtTime(0.15, audioContext.currentTime); // Reduced from 0.2 to 0.15
 
     brownNoiseNode.connect(lowPassFilter);
     lowPassFilter.connect(gainNode);
